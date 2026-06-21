@@ -28,6 +28,15 @@ pipeline, and analyzing where and why diarization fails.
 > Colab tip: you can also open it manually with **File → Open notebook → GitHub**, then
 > paste the repository URL `https://github.com/YannisTevissen/LabSession`.
 
+### Troubleshooting the install on Colab
+
+- The install cell prints several red **"dependency resolver"** warnings (about
+  `google-colab`, `gradio`, `opentelemetry`, `pandas`). These are harmless and come from
+  Colab's own preinstalled packages.
+- The install cell pins `numpy<2.1` so that `librosa`/`numba` keep working. If Colab shows
+  a **"Restart session"** prompt after installing, click it (**Runtime → Restart session**),
+  then continue from **Section 1** — you do not need to re-run the install cell.
+
 ---
 
 ## Hugging Face token (for the diarization pipeline)
@@ -48,8 +57,8 @@ Provide the token in one of these ways:
 - **Locally:** export it before launching, e.g. `export HF_TOKEN=hf_...`, or paste it
   when prompted.
 
-If you cannot get a token, you can still complete the VAD, visualization,
-clustering-intuition, and manual error-analysis sections.
+A token is required to run the diarization pipeline (Section 6): the notebook stops with
+an error if none is provided.
 
 ---
 
