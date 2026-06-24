@@ -87,6 +87,10 @@ Work in groups of 2–3 students and create three short recordings:
 | `overlap.wav` | 20–35 s | same speakers, with a clear overlap region |
 | `degraded.wav` | 20–35 s | same speakers, harder condition: noise, distance, soft voice, background music, or fast turns |
 
+> Remote students who can't record themselves alongside another person can use their
+> phone to play a video: the voice of a person in the video acts as the second speaker
+> (the "co-student"), while you speak as the first speaker.
+
 Convert `.m4a`/`.mp3` files to `.wav` before running the rest of the notebook.
 
 ---
